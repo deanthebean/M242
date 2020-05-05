@@ -14,7 +14,7 @@ int main(void)
 
     while (True)
     {
-        TRACE("Damn Daniel");
+        TRACE("Hello World");
         _delay_ms(1000);
     }
     return 0;

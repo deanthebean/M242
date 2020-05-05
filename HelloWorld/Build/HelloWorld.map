@@ -29,19 +29,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
  .data          0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
  .bss           0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .text          0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .data          0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .bss           0x00000000        0x0 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .text.main     0x00000000       0x28 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_info    0x00000000      0x174 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_abbrev  0x00000000      0x115 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_aranges
-                0x00000000       0x20 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_ranges  0x00000000       0x10 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_line    0x00000000      0x164 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_str     0x00000000      0x1c2 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .comment       0x00000000       0x31 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
- .debug_frame   0x00000000       0x24 c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
  .text          0x00000000        0x0 C:\Projects\M242\Avr\ToolChain\AvrLib\atmega328\AvrLib.a(AvrLib.o)
  .data          0x00000000        0x0 C:\Projects\M242\Avr\ToolChain\AvrLib\atmega328\AvrLib.a(AvrLib.o)
  .bss           0x00000000        0x0 C:\Projects\M242\Avr\ToolChain\AvrLib\atmega328\AvrLib.a(AvrLib.o)
@@ -222,7 +209,6 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD C:/Projects/M242/Avr/ToolChain/avr8-gnu-toolchain-win32_x86/avr/Lib/avr5/crtatmega328.o
-LOAD c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
 LOAD c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
 LOAD C:\Projects\M242\Avr\ToolChain\AvrLib\atmega328\AvrLib.a
 START GROUP

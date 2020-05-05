@@ -28,9 +28,9 @@ C_SRCS +=  c:\projects\m242\proj\HelloWorld\HelloWorld.c
 
 ASM_SRCS += 
 
-OBJS +=  c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
+OBJS +=  c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
 
-OBJS_AS_ARGS +=  c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
+OBJS_AS_ARGS +=  c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o
 
 C_DEPS +=  c:/projects/m242/proj\HelloWorld\Build\HelloWorld.d
 
@@ -46,13 +46,6 @@ c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o: c:/projects/m242/proj\Hello
 	@echo Building file: $<
 	@echo Invoking: AVR\GNU C Compiler : 5.4.0
 	$(AVR_TOOLS_PATH)\bin\avr-gcc.exe -x c -std=gnu99 -Werror -funsigned-char -funsigned-bitfields -DDEBUG -D$(AVR_FAMILY) -I "$(AVR_LIB_PATH)\include" -I"$(AVR_TOOLS_PATH)\avr\include" -I"$(ProjectRoot)"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=$(MMCU) -B "$(AVR_TOOLS_PATH)\avr\Lib" -c  -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<"
-	@echo Finished building: $<
-
-
-c:/projects/m242/proj\HelloWorld\Build\HelloWorld.o: c:\projects\m242\proj\HelloWorld\HelloWorld.s
-	@echo Building file: $<
-	@echo Invoking: AVR\GNU C Compiler : 5.4.0
-	$(AVR_TOOLS_PATH)\bin\avr-gcc.exe   -Werror -funsigned-char -funsigned-bitfields -DDEBUG -D$(AVR_FAMILY) -I "$(AVR_LIB_PATH)\include" -I"$(AVR_TOOLS_PATH)\avr\include" -I"$(ProjectRoot)"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=$(MMCU) -B "$(AVR_TOOLS_PATH)\avr\Lib" -c  -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<"
 	@echo Finished building: $<
 
 
